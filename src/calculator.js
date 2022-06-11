@@ -1,4 +1,5 @@
 import './app.module.css'
+import './mystyles.scss'
 
 const Calculator = (props: any) => {
   return (
