@@ -1,6 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react';
 import { useState, useEffect } from 'react';
+import styles from './app.module.css';
+import NxWelcome from './nx-welcome';
 import 'bulma/css/bulma.min.css';
 import Calculator from './calculator';
 import Header from './header';
@@ -73,3 +75,4 @@ const App = () => {
 }
 
 export default App;
+
