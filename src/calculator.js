@@ -1,7 +1,7 @@
 import './app.module.css'
 import './mystyles.scss'
 
-const Calculator = (props: any) => {
+const Calculator = (props) => {
   return (
     <div className="container is-fullhd">
       <form>
@@ -17,13 +17,15 @@ const Calculator = (props: any) => {
           <input className="input is-primary" type="text" name="cadPrice" onChange={props.handleChange} placeholder={props.formData.cadPrice}/>
           <label className="label mt-3">Gas Mileage(L/100KM)</label>
           <input className="input is-primary" type="text" name="mileage" onChange={props.handleChange}/>
-          <button className="button mt-5 p-3 is-success" onClick={props.calculate}>Calculate Savings</button>
         </div>
         <div className="column">
           <label className="label">US Gas Price($USD/Gal)</label>
           <input className="input is-primary" type="text" name="usdPrice" onChange={props.handleChange} placeholder={props.formData.usdPrice}/>
           <label className="label mt-3">Quantity of Gas(L)</label>
           <input className="input is-primary" type="text" name="quantity" onChange={props.handleChange}/>
+          <button className="button mt-5 p-3 is-success" onClick={props.calculate}>Calculate Savings</button>
+          &nbsp;
+          &nbsp;
           <button className="button mt-5 p-3 is-warning" onClick={props.reset}>Reset</button>
         </div>
       </div>
